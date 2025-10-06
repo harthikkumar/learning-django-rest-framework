@@ -4,5 +4,5 @@ from home.models import Company
 
 class companySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        models = Company
+        model = Company
         fields ="__all__"
