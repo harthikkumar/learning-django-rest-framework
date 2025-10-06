@@ -5,7 +5,7 @@ from home.models import Company,Employee
 class companySerializer(serializers.HyperlinkedModelSerializer):
     company_id = serializers.ReadOnlyField()
     class Meta:
-        models = Company
+        model = Company
         fields ="__all__"
 
 
